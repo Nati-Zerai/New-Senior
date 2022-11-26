@@ -56,16 +56,20 @@ const UserProfileScreen = () => {
       </Text>
       <View className="rounded-xl mx-6 my-3 bg-white">
         <View className="w-96 pb-4 px-4 self-center flex"></View>
-        <View className="pt-2 px-4">
+        <View className="pt-1 px-4">
           <Text className="">First Name</Text>
           <TextInput className="w-full h-8 border-b" />
         </View>
-        <View className="pt-2 px-4">
+        <View className="pt-1 px-4">
           <Text className="pt-4">Last Name</Text>
           <TextInput className="w-full h-8 border-b" />
         </View>
-        <View className="pt-2 px-4">
+        <View className="pt-1 px-4">
           <Text className="pt-4">Email Address</Text>
+          <TextInput className="w-full h-8 border-b" />
+        </View>
+        <View className="pt-1 px-4">
+          <Text className="pt-4">Address</Text>
           <TextInput className="w-full h-8 border-b" />
         </View>
         <TouchableOpacity className="self-center mx-4 mt-4 mb-4 px-8 py-3 rounded-xl bg-[#7cc464]">

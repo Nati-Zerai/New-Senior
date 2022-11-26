@@ -53,7 +53,8 @@ const HomeScreen = () => {
         </TouchableOpacity>
       </View>
       {/* Pick Up */}
-      <TouchableOpacity className="bg-white mx-5 my-2 p-2 rounded-3xl">
+      <TouchableOpacity className="bg-white mx-5 my-2 p-2 rounded-3xl"
+        onPress={() => navigation.navigate("ChangeAddress")}>
         <View className="flex-row items-center space-x-2 px-2">
           <MapPinIcon color="black" opacity={0.4} size={22} />
           <View className="flex-1">
@@ -119,6 +120,7 @@ const HomeScreen = () => {
         ))}
       </ScrollView>
     </View>
+
   );
 };
 

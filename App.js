@@ -28,6 +28,8 @@ import RewardsScreen from "./screens/RewardsScreen";
 
 import { Provider } from "react-redux";
 import { store } from "./store";
+import AddAddressScreen from "./screens/AddAddressScreen";
+import ChangeAddressScreen from "./screens/ChangeAddressScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -101,7 +103,33 @@ export default function App() {
             />
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="Rewards" component={RewardsScreen} />
+            <Stack.Screen name="AddAddress" component={AddAddressScreen} />
+            {/* <Stack.Screen
+              name="AddAddress"
+              component={AddAddressScreen}
+              options={{
+                presentation: "transparentModal",
+                headerShown: false,
+                gestureEnabled: true,
+                gestureResponseDistance: 1000,
+                cardOverlayEnabled: true,
+                ...TransitionPresets.ModalPresentationIOS,
+              }}
+            /> */}
+            <Stack.Screen
+              name="ChangeAddress"
+              component={ChangeAddressScreen}
+              options={{
+                presentation: "transparentModal",
+                headerShown: false,
+                gestureEnabled: true,
+                gestureResponseDistance: 1000,
+                cardOverlayEnabled: true,
+                ...TransitionPresets.ModalPresentationIOS,
+              }}
+            />
           </Stack.Navigator>
+
 
           <Footer />
         </TailwindProvider>
